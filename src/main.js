@@ -1,4 +1,4 @@
-//import Login from './views/login/Login'
+import Login from './views/login/Login'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './router/'
@@ -20,8 +20,8 @@ const router = new VueRouter({
 })
 
 new Vue({
-  //components: {Login},
-  //template: '<Login/>',
+  components: {Login},
+  template: '<Login/>',
   router,
   store
 }).$mount("#app")

@@ -5,7 +5,6 @@ import Home from '../views/home/Home'
 //const Login = r => require.ensure([], () => r(require('../views/login/Login')), 'Login');
 //const Home = r => require.ensure([], () => r(require('../views/home/Home')), 'Home');
 
-
 export default [{
   path: '/',
   components: { App },
@@ -21,6 +20,7 @@ export default [{
     template: '<Login/>'
   }, {
     path: '/home',
+    //component: Home
     components: { Home },
     template: '<Home/>'
   }]
