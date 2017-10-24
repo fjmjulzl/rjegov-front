@@ -7,21 +7,21 @@ import Home from '../views/home/Home'
 
 export default [{
   path: '/',
-  components: { App },
-  template: '<App/>',
-  //component: App,
+  //components: { App },
+  //template: '<App/>',
+  component: App,
   children: [{
     path: '',
     redirect: '/login'
   }, {
     path: '/login',
-    //component: Login
-    components: { Login },
-    template: '<Login/>'
+    component: Login
+    //components: { Login },
+    //template: '<Login/>'
   }, {
     path: '/home',
-    //component: Home
-    components: { Home },
-    template: '<Home/>'
+    component: Home
+    //components: { Home },
+    //template: '<Home/>'
   }]
 }]
